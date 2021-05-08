@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+    <h3 class="py-2">Actualmente hay {{$resumes->count()}} 'resumes' en la aplicación</h3>
     <table class="table table-striped">
         <thead>
             <tr>
