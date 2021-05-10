@@ -2,6 +2,16 @@
 
 @section('content')
 <div class="container">
+    @if(session('alert'))
+
+    <div class="alert alert-{{ session('alert')['type'] }} alert-dismissible fade show" role="alert">
+        {{ session('alert')['message'] }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    @endif
     <h3 class="py-2">Actualmente hay {{$resumes->count()}} 'resumes' en la aplicación</h3>
     <table class="table table-striped">
         <thead>
