@@ -24,6 +24,6 @@ Auth::routes();
 
 //Rutas protegidas, atiketesale
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    Route::resource('/resumes',ResumeController::class)->name('*','resumes');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('/resumes',ResumeController::class)->name('*','resumes');
 });

@@ -12,7 +12,7 @@
     </div>
 
     @endif
-    <h3 class="py-2">Actualmente hay {{$resumes->count()}} 'resumes' en la aplicación</h3>
+    <h3 class="h3">Currently there are {{$resumes->count()}} 'resumes' on the application</h3>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -32,7 +32,13 @@
                             <a href="{{ route('resumes.edit', $resume->id) }}" class="btn btn-primary">Edit</a>
                         </div>
                         <div>
-                            <a href="{{ route('resumes.destroy', $resume->id) }}" class="btn btn-danger">Delete</a>
+                            <form method="POST" action="{{ route('resumes.destroy', $resume->id) }}">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">
+                                    Delete
+                                </button>
+                            </form>
                         </div>
                        
                     </div>
