@@ -18,7 +18,7 @@ class ResumePolicy
      */
     public function viewAny(User $user)
     {
-        //
+        
     }
 
     /**
@@ -30,7 +30,8 @@ class ResumePolicy
      */
     public function view(User $user, Resume $resume)
     {
-        //
+        return $user->id === $resume->user->id;
+
     }
 
     /**

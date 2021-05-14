@@ -73,11 +73,8 @@ class ResumeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Resume $resume)
-    {
-        $resultado = Resume::join("users","users.id", "=", "resumes.id")
-        ->select("users.name", "resumes.title")
-        ->get();
-        return $resultado;
+    {   
+        return view('resumes.show', compact('resume'));
 
     }
 
