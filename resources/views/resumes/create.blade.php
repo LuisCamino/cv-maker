@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="{{ asset('css/custom.css') }}" rel="stylesheet" type="text/css">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -10,8 +11,10 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('resumes.store') }}">
                         @csrf
-
-                        <div class="form-group row">
+                         <div class="row justify-content-center">
+                         Add a title for your resume
+                         </div>
+                        <div class="form-group row mt-3">
                             <label for="title" class="col-md-4 col-form-label text-md-right">
                             Title
                             </label>
@@ -21,7 +24,7 @@
                                 type="text"
                                 class="form-control @error('title') is-invalid @enderror"
                                 name="title"
-                                value="{{ old('title') }}"
+                                value="Eg: Teacher Resume"
                                 required
                                 autocomplete="title"
                                 autofocus>
@@ -39,14 +42,16 @@
                                 <button type="submit" class="btn btn-primary">
                                     Submit
                                 </button>
-
+                                
                                 
                             </div>
                         </div>    
                     </form>
                 </div>
-            </div>
+            </div>    
+            <div class="row justify-content-left"><a class="ml-4 mt-3" href="{{route('home')}}"><img src="/storage/pictures/return.png"style="width:30px;height:30px;"></a></div>
         </div>
     </div>
 </div>
+
 @endsection

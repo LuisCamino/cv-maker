@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="{{ asset('css/custom.css') }}" rel="stylesheet" type="text/css">
 <div class="container">
     @if(session('alert'))
 
@@ -12,11 +13,11 @@
     </div>
 
     @endif
-    <h3 class="h3">Currently there are {{$resumes->count()}} 'resumes' on the application</h3>
+    <h4 class="h4">Currently there are {{$resumes->count()}} 'resumes' on the application</h4>
     <table class="table table-striped">
         <thead>
             <tr>
-                <th scope="col">Title</th>
+                <th scope="col">Resume title</th>
                 <th scope="col"></th>
             </tr>
         </thead>   
@@ -24,7 +25,7 @@
             @foreach($resumes as $resume)
             <tr> 
                 <td>
-                    <a href="{{ route('resumes.show', $resume->id) }}">{{ $resume->title }}</a>
+                    <a href="{{ route('resumes.show', $resume->id) }} "><u>{{ $resume->title }} </u></a>
                 </td>
                 <td>
                     <div class="d-flex justify-content-end">
@@ -39,14 +40,13 @@
                                     Delete
                                 </button>
                             </form>
-                        </div>
-                       
-                    </div>
-                   
+                        </div>    
+                    </div>  
                 </td>
             </tr>
             @endforeach
         </tbody> 
     </table>
+    <div class="row justify-content-left"><a class="ml-4 mt-3" href="{{route('home')}}"><img src="/storage/pictures/return.png"style="width:30px;height:30px;"></a></div>
 </div>
 @endsection

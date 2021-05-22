@@ -31,6 +31,11 @@ class UserFactory extends Factory
         ];
     }
 
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ];
     /**
      * Indicate that the model's email address should be unverified.
      *

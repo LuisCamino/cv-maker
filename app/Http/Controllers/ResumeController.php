@@ -102,6 +102,10 @@ class ResumeController extends Controller
         $data = $request->validate([
             'name' => 'required|string',
             'email' => 'required|email',
+            'contact' => 'nullable|string',
+            'experience' => 'nullable|string',
+            'education' => 'nullable|string',
+            'skills' => 'nullable|string',
             'website' => 'nullable|url',
             'picture' => 'nullable|image',
             'about' => 'nullable|string',
