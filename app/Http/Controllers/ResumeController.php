@@ -74,7 +74,9 @@ class ResumeController extends Controller
      */
     public function show(Resume $resume)
     {   
-        return view('resumes.show', compact('resume'));
+        $test = Resume::all();
+        dd($test);
+        return view('resumes.show', compact('resume'))->with('test', $test->find($resume->id)->skills);
         //Resume::with('users')->get();
     }
 
