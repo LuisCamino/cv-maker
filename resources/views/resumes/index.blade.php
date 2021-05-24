@@ -13,11 +13,11 @@
     </div>
 
     @endif
-    <h4 class="h4">Currently there are {{$resumes->count()}} 'resumes' on the application</h4>
+    <h4 class="h4 mt-3">Currently there are {{$resumes->count()}} 'resumes' on the application</h4>
     <table class="table table-striped">
         <thead>
             <tr>
-                <th scope="col">Resume title</th>
+                <th>Resume title</th>
                 <th scope="col"></th>
             </tr>
         </thead>   

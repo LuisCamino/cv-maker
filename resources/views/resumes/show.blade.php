@@ -28,13 +28,13 @@
     </section>
   </header>
   <main>
-    <hr>
+    
     <section>
      
       <div class='skills'>
         <div class='column'>
          <h3 class="h3-skills">Skills</h3>
-         <ol>
+         <ol class="ol">
           @foreach(explode(',',$test) as $row)
           <li>{{ $row }}</li>
           @endforeach
@@ -44,7 +44,11 @@
          <h3>Education</h3>
       <article>
         <div class="descrition">
-          {{ $resume->education }}
+           <dl>
+          @foreach(explode(',',$edu) as $row)
+          <dd>{{ $row }}</dd>
+          @endforeach
+          </dl>
       </article>
         
  
@@ -53,7 +57,11 @@
        <div class='skills'>
         <div class='column'>
          <h3>EXPERIENCE</h3>
-          {{ $resume->experience }}
+          <ul>
+          @foreach(explode(',',$exp) as $col)
+          <li>{{ $col }}</li>
+          @endforeach
+          </ul>
         </div>
         <div class='column'>
          <h3>CONTACT</h3>
