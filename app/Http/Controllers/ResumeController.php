@@ -62,7 +62,7 @@ class ResumeController extends Controller
         ]);
 
         
-        return redirect()->route('resumes.index');
+        return redirect()->route('resumes.edit', $resume->id);
         
     }
 
@@ -74,14 +74,32 @@ class ResumeController extends Controller
      */
     public function show(Resume $resume)
     {   
-        $test = Resume::find($resume->id)->skills;
-        $exp = Resume::find($resume->id)->experience;
-        $edu = Resume::find($resume->id)->education;
         
-        return view('resumes.show', compact('resume'))
-        ->with('test', $test)
-        ->with('exp', $exp)
-        ->with('edu', $edu);
+        $skill =$resume->skills;
+        $exp = $resume->experience;
+        $edu = $resume->education;
+        $con = $resume->contact;
+        
+        $array = array($skill, $exp, $edu, $con);
+        
+       
+        
+
+        
+        
+        if (in_array(null , $array)) {
+            return view('resumes.empty', compact('resume'));
+        }
+        else{
+            return view('resumes.show', compact('resume'))
+            ->with('skill', $skill)
+            ->with('exp', $exp)
+            ->with('edu', $edu)
+            ->with('con', $con);
+        }   
+    
+        
+
         //Resume::with('users')->get();
     }
 

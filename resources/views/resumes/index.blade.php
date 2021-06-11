@@ -47,6 +47,6 @@
             @endforeach
         </tbody> 
     </table>
-    <div class="row justify-content-left"><a class="ml-4 mt-3" href="{{route('home')}}"><img src="/storage/pictures/return.png"style="width:30px;height:30px;"></a></div>
+    <div class="row justify-content-left"><a class="ml-4 mt-3" href="{{route('home')}}"><img src="/storage/pictures/back-button.png"style="width:30px;height:30px;"></a></div>
 </div>
 @endsection

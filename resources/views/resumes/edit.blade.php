@@ -219,6 +219,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
+                            <a class="mr-4" href="{{route('home')}}"><img src="/storage/pictures/back-button.png"style="width:30px;height:30px;"></a>
                                 <button type="submit" class="btn btn-primary">
                                     Submit
                                 </button>

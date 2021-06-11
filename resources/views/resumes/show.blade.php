@@ -16,7 +16,7 @@
 <body>
   <header>
     <div>
-      <img style="width: 120px;" src=" {{ $resume->picture }}">
+      <img style="width: 120px;" src="{{ $resume->picture }}">
       <div class="mt-2">
       <h4>{{ $resume->title }} </h4>
       </div>
@@ -30,16 +30,18 @@
   <main>
     
     <section>
-     
+      @if(isset($resume->skills))
       <div class='skills'>
         <div class='column'>
-         <h3 class="h3-skills">Skills</h3>
+         <h3 class="h3-skills">SKILLS</h3>
          <ol class="ol">
-          @foreach(explode(',',$test) as $row)
+          @foreach(explode(',',$skill) as $row)
           <li>{{ $row }}</li>
           @endforeach
           </ol>
         </div>
+        @endif
+
         <div class='column'>
          <h3>Education</h3>
       <article>
@@ -54,6 +56,8 @@
  
     </section>
     <section>
+
+     @if(isset($resume->experience))
        <div class='skills'>
         <div class='column'>
          <h3>EXPERIENCE</h3>
@@ -63,16 +67,25 @@
           @endforeach
           </ul>
         </div>
+
+        @endif
+
         <div class='column'>
          <h3>CONTACT</h3>
       <article>
         <div class="descrition">
-          {{ $resume->contact }}<br>
+           <dl>
+          @foreach(explode(',',$con) as $row)
+          <dd>{{ $row }}</dd>
+          @endforeach
+          </dl>
           {{ $resume->email }} <br>
           {{ $resume->website }}
       </article>
         
     </section>
+        <div class="row justify-content-left mt-3"><a class="ml-4 mt-3" href="{{route('resumes.index')}}"><img src="/storage/pictures/back-button.png"style="width:30px;height:30px;"></a></div>
+
   </main>
 
 </body>

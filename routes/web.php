@@ -24,7 +24,7 @@ Auth::routes();
 
 //Rutas protegidas
 Route::group(['middleware' => 'auth'], function () {
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('ernesto');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/resumes',ResumeController::class)->name('*','resumes');
 
 
