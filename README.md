@@ -1,6 +1,7 @@
-##CV-MAKER
+![curriculum-vitae (1)](https://user-images.githubusercontent.com/33894327/120533136-b4e61400-c3e0-11eb-8565-0b6f410bc574.png)
+CV-MAKER
 
-###Description
+Description
 I created this web application for manage and create your own resumes. This version still in development so if you find any problems or suggest you can contact me here luiscm4c@gmail.com.
 ###### Thank you for your time :)
 
