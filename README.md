@@ -5,7 +5,7 @@
 I created this web application for manage and create your own resumes. This version still in development so if you find any problems or suggest you can contact me here luiscm4c@gmail.com.
 ###### Thank you for your time :)
 
-##Before start:
+## Before start:
 Follow this steps for install the project.
 ### 1. Clone the repository.
 then `cd cv-maker`
