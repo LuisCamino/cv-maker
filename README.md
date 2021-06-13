@@ -1,4 +1,5 @@
 ![curriculum-vitae (1)](https://user-images.githubusercontent.com/33894327/120533136-b4e61400-c3e0-11eb-8565-0b6f410bc574.png)
+
 ## CV-MAKER
 
 ### Description
@@ -38,3 +39,4 @@ DB_PASSWORD= your database password
 
 ### 7. Last step, run the server.
 `php artisan serve`
+
