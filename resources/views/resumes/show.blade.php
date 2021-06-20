@@ -84,7 +84,7 @@
       </article>
         
     </section>
-        <div class="row justify-content-left mt-3"><a class="ml-4 mt-3" href="{{route('resumes.index')}}"><img src="/storage/pictures/back-button.png"style="width:30px;height:30px;"></a></div>
+        <div class="row justify-content-left mt-3"><a class="ml-4 mt-3" href="{{route('resumes.index')}}"><img src="https://i.postimg.cc/DZ3rC19N/back-button.png"style="width:30px;height:30px;"></a></div>
 
   </main>
 

@@ -27,7 +27,7 @@
       <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
         <div class="icon-redirect">
-        <img src="/storage/pictures/proyecto.png"style="width:50px;height:50px;">
+        <img src="https://i.postimg.cc/4xDHZVJQ/profile.png"style="width:50px;height:50px;margin-right:10px;">
          Resume Creator
         </a>
         </div>

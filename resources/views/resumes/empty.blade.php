@@ -17,7 +17,7 @@
   <header>
     <div>
     <h3 class="h3 p-3 mt-3">Empty resume</h3>
-    <div class="row justify-content-center"><img src="/storage/pictures/advertencia.png"style="width:150px;height:150px;"></a></div>
+    <div class="row justify-content-center"><img src="https://i.postimg.cc/QtpySQM4/advertencia.png"style="width:150px;height:150px;"></a></div>
    
     </div>
     </header>
