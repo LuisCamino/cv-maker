@@ -38,4 +38,3 @@ DB_PASSWORD= your database password
 `php artisan migrate`
 
 ### 7. Last step, run the server.
-`php artisan serve`
