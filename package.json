@@ -23,5 +23,10 @@
         "vue": "^2.6.12",
         "vue-loader": "^15.9.6",
         "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "composer": "^4.1.0",
+        "php": "^1.0.1",
+        "php-server": "^0.2.1"
     }
 }

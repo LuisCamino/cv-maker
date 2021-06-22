@@ -55,6 +55,7 @@ class ResumeController extends Controller
             ->withInput(['title' => $request->title]); 
         }
         
+        
         $resume = $user->resumes()->create([
             'title' => $request['title'],
             'name' => $user->name,
@@ -80,9 +81,9 @@ class ResumeController extends Controller
         $edu = $resume->education;
         $con = $resume->contact;
         
+        
         $array = array($skill, $exp, $edu, $con);
         
-       
         
 
         
