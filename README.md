@@ -2,8 +2,6 @@
 
 ## CV-MAKER
 
-all content is in dev branch.
-
 ### Description
 
 I created this web application for manage and create your own resumes. This version still in development so if you find any problems or suggest you can contact me here luiscm4c@gmail.com.
@@ -51,14 +49,6 @@ DB_PASSWORD= your database password
 
 `php artisan migrate`
 
-<<<<<<< HEAD
-
-### 7. Last step, run the server.
-
-=======
-
 ### 7. Last step, run the server.
 
 `php artisan serve`
-
-> > > > > > > 834395ece7e587c5a7905786c2fa74b32b359429
